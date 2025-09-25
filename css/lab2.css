@@ -1,66 +1,64 @@
-<style>
-/* 1 */
 li:first-child {
-  font-weight: bold;
+    font-weight: bold;
 }
-/* 2 */
+
 a:last-child {
-  color: red;
+    color: red;
 }
-/* 3 */
+
 input:disabled {
-  background-color: #ccc;
+    background-color: #ccc;
 }
-/* 4 */
+
 div > p {
-  font-weight: bold;
+    font-weight: 600;
 }
-/* 5 */
+
 *[href^="https"] {
-  color: green;
+    color: green;
 }
-/* 6 */
+
 input[type="text"] {
-  border: 1px solid blue;
+    border: 1px solid blue;
 }
-/* 7 */
+
 li:first-child,
 li:last-child {
-  font-size: 24px;
+    font-size: 24px;
 }
-/* 8 */
+
 div p {
-  font-size: 16px;
+    font-size: 16px;
 }
-/* 9 */
+
 input:checked {
-  background-color: #e0f7fa;
+    background-color: #e0f7fa;
 }
-/* 10 */
+
 li > a {
-  text-decoration: underline;
+    text-decoration: underline;
 }
-/* 11 */
+
 li:nth-child(even) {
-  font-weight: bold;
+    font-weight: bold;
 }
-/* 12 */
+
 input[type="text"]:not(:disabled) {
-  background-color: #eee;
+    background-color: #eee;
 }
-/* 13 */
+
 p:first-child {
-  font-size: 24px;
+    font-size: 24px;
 }
-/* 14 */
+
 .special + li {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
-/* 15 */
+
 p::first-letter {
-  font-size: 36px;
+    font-size: 36px;
 }
-/* 16 */
+
 a::after {
-  content: " [посилання]";
+    content: "";
 }
