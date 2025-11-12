@@ -21,13 +21,8 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 16px;
-  min-height: 100vh;
+  grid-template-columns: auto 1fr auto;
 }
-
-.top {
-  text-align: center;
-}
-.subtitle { opacity: .8; font-size: 0.9rem; }
 
 .content {
   display: flex;
@@ -35,69 +30,135 @@ body {
   justify-content: center;
 }
 
+.keyboard {
+  display: grid;
+  grid-template-columns: 15fr 3fr 4fr;
+  gap: 20px;
+}
+
 .keyboard-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background: linear-gradient(180deg, #141c2c, #0b1220);
   border-radius: 14px;
   padding: 20px;
   box-shadow: var(--shadow);
 }
 
-.keyboard {
+.keyboard-main {
   display: grid;
-  grid-template-columns: 2.5fr 1fr 1fr;
-  gap: 20px;
-}
-
-.row {
-  display: flex;
+  grid-template-columns: repeat(15, 3rem);
+  grid-template-rows: repeat(6, 3rem);
   gap: var(--gap);
-  margin-bottom: 8px;
+  justify-content: center;
 }
-
-.row.small { gap: 8px; }
 
 .key {
   background: var(--key);
   color: var(--key-text);
-  border: none;
   border-radius: var(--radius);
-  min-width: 46px;
-  height: 48px;
+  box-shadow: var(--shadow);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 5px 10px rgba(5,10,20,0.3);
-  font-weight: 600;
+  font-size: 14px;
+  user-select: none;
   cursor: pointer;
-  transition: 0.1s;
-}
-.key:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(10,15,30,0.4);
-}
-.key:active {
-  transform: translateY(1px);
-  box-shadow: inset 0 4px 6px rgba(0,0,0,0.3);
 }
 
-.key.wide { min-width: 100px; }
-.key.wider { min-width: 120px; }
-.key.space { min-width: 260px; height: 54px; }
-.key.enter-vert {
-  height: 106px;
-  align-self: stretch;
+.row {
+  display: contents;
+}
+
+.key.wide {
+  grid-column: span 2;
+}
+.keyboard-main .key.space {
+  grid-column: span 5 ;
+  grid-column: 5 / 10;
+  grid-row: 6;
+}
+.keyboard-main .key.Enter {
+  grid-column: 14 / 16;
+  grid-row: 4;
+}
+.keyboard-main .key.back {
+  grid-column: span 2;
+}
+.keyboard-main .key.Ctrl {
+  grid-column: 1;
+  grid-row: 6;
+  grid-column: span 2;
+}
+.keyboard-main .key.win {
+  grid-column: 2;
+  grid-row: 6;
+  grid-column: span 1;
+}
+.keyboard-main .key.alt {
+  grid-column: 3;
+  grid-row: 6;
+}
+.keyboard-main .key.alt2 {
+  grid-column: 10;
+  grid-row: 6;
+}
+.keyboard-main .key.ctrl {
+  grid-column: 14;
+  grid-row: 6;
+  grid-column: span 2;
+}
+.keyboard-main .key.Shift {
+  grid-column: span 3;
+}
+.keyboard-main .key.Menu {
+  grid-column: 12;
+  grid-row: 6;
+  grid-column: span 2;
+}
+.keyboard-main .key.win2 {
+  grid-column: 11;
+  grid-row: 6;
+}
+
+.keyboard-middle {
+  display: grid;
+  grid-template-columns: repeat(3, 3rem);
+  grid-template-rows: repeat(6, 3rem);
+  gap: var(--gap);
+  justify-content: center;
+}
+
+.keyboard-middle .key {
+  background: var(--key);
+  color: var(--key-text);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  user-select: none;
+  cursor: pointer;
 }
 
 .keyboard-middle .row.arrows {
-  justify-content: center;
-}
-.key.arrow {
-  min-width: 50px;
-  height: 46px;
+  display: contents;
 }
 
-.foot {
-  text-align: center;
-  font-size: 0.85rem;
-  opacity: .6;
+.keyboard-numpad {
+  display: grid;
+  grid-template-columns: repeat(4, 3rem);
+  grid-template-rows: repeat(5, 3rem);
+  gap: var(--gap);
+  justify-content: center;
+}
+.keyboard-numpad .key.enter-vert {
+  grid-row: span 2;
+   order: 4 5; 
+}
+.keyboard-numpad .key.plus {
+  grid-row: span 2;
 }

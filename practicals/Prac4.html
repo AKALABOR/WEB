@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="../css/prac4.css" />
 </head>
 <body>
-  <div class="page">
-    <main class="content">
       <section class="keyboard-wrap">
         <div class="keyboard">
 
@@ -19,7 +17,6 @@
               <div class="spacer small"></div>
               <button class="key">F1</button><button class="key">F2</button>
               <button class="key">F3</button><button class="key">F4</button>
-              <div class="spacer small"></div>
               <button class="key">F5</button><button class="key">F6</button>
               <button class="key">F7</button><button class="key">F8</button>
               <div class="spacer small"></div>
@@ -33,7 +30,7 @@
               <button class="key">6</button><button class="key">7</button><button class="key">8</button>
               <button class="key">9</button><button class="key">0</button>
               <button class="key">-</button><button class="key">=</button>
-              <button class="key wide">Backspace</button>
+              <button class="key back">Backspace</button>
             </div>
 
             <div class="row">
@@ -51,7 +48,7 @@
               <button class="key">F</button><button class="key">G</button><button class="key">H</button>
               <button class="key">J</button><button class="key">K</button><button class="key">L</button>
               <button class="key">;</button><button class="key">'</button>
-              <button class="key wider">Enter</button>
+              <button class="key Enter">Enter</button>
             </div>
 
             <div class="row">
@@ -59,13 +56,13 @@
               <button class="key">Z</button><button class="key">X</button><button class="key">C</button>
               <button class="key">V</button><button class="key">B</button><button class="key">N</button>
               <button class="key">M</button><button class="key">,</button><button class="key">.</button><button class="key">/</button>
-              <button class="key wide">Shift</button>
+              <button class="key Shift">Shift</button>
             </div>
 
             <div class="row">
-              <button class="key">Ctrl</button><button class="key">Win</button><button class="key">Alt</button>
+              <button class="key Ctrl">Ctrl</button><button class="key win">Win</button><button class="key alt">Alt</button>
               <button class="key space"></button>
-              <button class="key">Alt</button><button class="key">Fn</button><button class="key">Ctrl</button>
+              <button class="key alt2">Alt</button><button class="key win2">Win</button><button class="key Menu">Menu</button><button class="key ctrl">Ctrl</button>
             </div>
           </div>
 
@@ -79,10 +76,13 @@
             <div class="row">
               <button class="key">Del</button><button class="key">End</button><button class="key">PgDn</button>
             </div>
+            <div class="spacer small"></div>
+            <div class="spacer small"></div>
+            <div class="spacer small"></div>
             <div class="row arrows">
-              <div class="empty"></div>
+              <div class="spacer small"></div>
               <button class="key arrow">▲</button>
-              <div class="empty"></div>
+              <div class="spacer small"></div>
             </div>
             <div class="row arrows">
               <button class="key arrow">◀</button>
@@ -92,29 +92,30 @@
           </div>
 
           <div class="keyboard-numpad">
+            <div class="spacer small"></div>
+            <div class="spacer small"></div>
+            <div class="spacer small"></div>
+            <div class="spacer small"></div>
             <div class="row small">
               <button class="key">Num</button><button class="key">/</button>
               <button class="key">*</button><button class="key">-</button>
             </div>
             <div class="row">
               <button class="key">7</button><button class="key">8</button>
-              <button class="key">9</button><button class="key">+</button>
+              <button class="key">9</button><button class="key plus">+</button>
             </div>
             <div class="row">
               <button class="key">4</button><button class="key">5</button>
-              <button class="key">6</button><button class="key enter-vert" rowspan="2">⏎</button>
+              <button class="key">6</button>
             </div>
             <div class="row">
-              <button class="key">1</button><button class="key">2</button><button class="key">3</button>
+              <button class="key">1</button><button class="key">2</button><button class="key">3</button><button class="key enter-vert" rowspan="2">⏎</button>
             </div>
             <div class="row">
               <button class="key wide">0</button><button class="key">.</button>
             </div>
           </div>
 
-        </div>
       </section>
-    </main>
-  </div>
 </body>
 </html>
