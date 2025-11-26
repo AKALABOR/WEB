@@ -1,0 +1,110 @@
+.world {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87cefa, #c1f0ff);
+    background-size: 100% 100%;
+    animation: sky-cycle 20s linear infinite;
+}
+
+@keyframes sky-cycle {
+    0% {
+        background: linear-gradient(#ffbf6b, #ffe2b3); /* ранок */
+    }
+    25% {
+        background: linear-gradient(#87cefa, #c1f0ff); /* день */
+    }
+    50% {
+        background: linear-gradient(#ff9a5a, #ffcd94); /* вечір */
+    }
+    75% {
+        background: linear-gradient(#1b1f3b, #3a3f77); /* ніч */
+    }
+    100% {
+        background: linear-gradient(#ffbf6b, #ffe2b3); /* знову ранок */
+    }
+}
+
+.grass {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: repeating-linear-gradient(
+        90deg,
+        #2ecc71,
+        #2ecc71 6px,
+        #27ae60 6px,
+        #27ae60 12px
+    );
+    animation: grassa 3s ease-in-out infinite;
+}
+
+@keyframes grassa { 
+    0%, 100% { transform: scaleY(1); } 
+    50% { transform: scaleY(1.3); } }
+
+.bulbasaur {
+    width: 120px;
+    height: 112px;
+    background: url("../images/bulba.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 40px;
+    left: -150px;
+    animation:
+        move 6s linear infinite,
+        bounce 0.8s ease-in-out infinite;
+}
+
+
+@keyframes move {
+    0%   { left: -150px; }
+    100% { left: 110%; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-18px); }
+}
+
+.cloud {
+    position: absolute;
+    top: 40px;
+    width: 180px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    filter: blur(1px);
+    opacity: 0.9;
+
+    animation: cloud-move 30s linear infinite;
+}
+
+.cloud::before,
+.cloud::after {
+    content: "";
+    position: absolute;
+    background: inherit;
+    width: 100px;
+    height: 60px;
+    border-radius: 50px;
+    top: -20px;
+}
+
+.cloud::before {
+    left: 20px;
+}
+
+.cloud::after {
+    left: 60px;
+}
+@keyframes cloud-move {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(150vw); }
+}
+
+.cloud1 { top: 40px; left: -200px; animation-duration: 40s; }
+.cloud2 { top: 100px; left: -250px; animation-duration: 55s; }
+.cloud3 { top: 70px; left: -300px; animation-duration: 70s; }
