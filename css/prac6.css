@@ -48,16 +48,18 @@
 .bulbasaur {
     width: 120px;
     height: 112px;
-    background: url("../images/bulba.png") no-repeat;
-    background-size: contain;
     position: absolute;
     bottom: 40px;
     left: -150px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
     animation:
-        move 6s linear infinite,
+        move 8s linear infinite,
+        evolve 8s linear infinite,
         bounce 0.8s ease-in-out infinite;
 }
-
 
 @keyframes move {
     0%   { left: -150px; }
@@ -68,6 +70,30 @@
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-18px); }
 }
+
+@keyframes evolve {
+    0% {
+        background-image: url("../images/bulba.png");  /* Bulbasaur */
+    }
+    33% {
+        background-image: url("../images/bulba.png");
+    }
+
+    34% {
+        background-image: url("../images/ivysaur.png"); /* Ivysaur */
+    }
+    66% {
+        background-image: url("../images/ivysaur.png");
+    }
+
+    67% {
+        background-image: url("../images/venusaur.png"); /* Venusaur */
+    }
+    100% {
+        background-image: url("../images/venusaur.png");
+    }
+}
+
 
 .cloud {
     position: absolute;
