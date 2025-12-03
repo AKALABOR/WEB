@@ -73,21 +73,21 @@
 
 @keyframes evolve {
     0% {
-        background-image: url("../images/bulba.png");  /* Bulbasaur */
+        background-image: url("../images/bulba.png");
     }
     33% {
         background-image: url("../images/bulba.png");
     }
 
     34% {
-        background-image: url("../images/ivysaur.png"); /* Ivysaur */
+        background-image: url("../images/ivysaur.png");
     }
     66% {
         background-image: url("../images/ivysaur.png");
     }
 
     67% {
-        background-image: url("../images/venusaur.png"); /* Venusaur */
+        background-image: url("../images/venusaur.png");
     }
     100% {
         background-image: url("../images/venusaur.png");
