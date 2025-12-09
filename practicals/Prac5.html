@@ -1,64 +1,121 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="../css/home.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
 
-  <header class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Я Федор<br>студент кафедри Технологій цифрового розвитку</h1>
-        <p>Аmet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-      </div>
-      <div class="hero-photo">
-        <img src="../images/photo.jpg" alt="Фото">
-      </div>
-    </div>
-  </header>
-
-  <section class="recent-posts">
     <div class="container">
-      <div class="section-header">
-        <h2>Останні публікації</h2>
-        <a href="#">Переглянути всі</a>
-      </div>
-      <div class="posts-grid">
-        <div class="post-card">
-          <h3>Газета</h3>
-          <p class="meta">Дата | Шаблон</p>
-          <p>Аmet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-          <li><a href="labs/lab4.html">Посилання</a></li>
-        </div>
-        <div class="post-card">
-          <h3>Некорректна клавіатура</h3>
-          <p class="meta">Дата | Шаблон, Дизайн</p>
-          <p>Аmet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-          <li><a href="practicals/Prac4.html">Посилання</a></li>
-        </div>
-      </div>
+        <nav>
+            <a href="#">Робота</a>
+            <a href="#">Блог</a>
+            <a href="#">Контакт</a>
+        </nav>
     </div>
-  </section>
 
-  <section class="featured-works">
-    <div class="container">
-      <h2>Вибрані роботи</h2>
-
-      <div class="work-card">
-        <img src="../images/work1.jpg" alt="Dashboard preview">
-        <div class="work-text">
-          <h3>Розклад</h3>
-          <div class="tags"><span class="year">2024</span></div>
-          <p>Розклад на тиждень</p>
-          <li><a href="practicals/practical1.html">Посилання</a></li>
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Вітаю, я Федор<br>Студент</h1>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <a href="#" class="btn-primary">Резюме</a>
+            </div>
+            <div class="hero-image">
+                <img src="../images/photo.jpg" alt="Федор">
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </header>
+
+    <section class="recent-posts">
+        <div class="container">
+            <div class="section-header">
+                <h3>Недавні пости</h3>
+                <a href="#" class="view-all">Усе</a>
+            </div>
+            
+            <div class="posts-grid">
+                <article class="post-card">
+                    <h2>Щось я тут робив</h2>
+                    <div class="post-meta">
+                        <span>12/02/202*</span>
+                        <span>Zzzzzzzzz</span>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </article>
+
+                <article class="post-card">
+                    <h2>Щось я тут робив</h2>
+                    <div class="post-meta">
+                        <span>12/02/202*</span>
+                        <span>Zzzzzzzzz</span>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-works">
+        <div class="container">
+            <h3>Роботи</h3>
+
+            <article class="work-item">
+                <div class="work-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Dashboard">
+                </div>
+                <div class="work-info">
+                    <h2>Щось я тут робив</h2>
+                    <div class="work-meta">
+                        <span class="year-badge">202*</span>
+                        <span class="category">Тип</span>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </article>
+
+            <article class="work-item">
+                <div class="work-img">
+                    <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Portrait">
+                </div>
+                <div class="work-info">
+                    <h2>Щось я тут робив</h2>
+                    <div class="work-meta">
+                        <span class="year-badge">202*</span>
+                        <span class="category">Тип</span>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </article>
+
+            <article class="work-item">
+                <div class="work-img">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Typography">
+                </div>
+                <div class="work-info">
+                    <h2>Щось я тут робив</h2>
+                    <div class="work-meta">
+                        <span class="year-badge">202*</span>
+                        <span class="category">Тип</span>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
 
 </body>
 </html>

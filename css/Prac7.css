@@ -1,0 +1,125 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.postcard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+}
+
+.postcard__container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 60px 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    transition: transform 0.3s ease;
+}
+
+.postcard__container:hover {
+    transform: translateY(-5px);
+}
+
+.postcard__year {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14rem;
+    font-weight: 700;
+    line-height: 1;
+    
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255, 215, 0, 0.1);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.postcard__content {
+    position: relative;
+    z-index: 2;
+}
+
+.postcard__title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #ffd700;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.postcard__message {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #e2e8f0;
+}
+
+.postcard__btn {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.postcard__btn--primary {
+    background-color: #ffd700;
+    color: #0f172a;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+.postcard__btn--primary:hover {
+    background-color: #ffecb3;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+    transform: scale(1.05);
+}
+
+.postcard__snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(4px 4px at 100px 50px, #fff , transparent), 
+        radial-gradient(6px 6px at 200px 150px, #fff, transparent), 
+        radial-gradient(3px 3px at 300px 250px, #fff, transparent);
+    background-size: 600px 600px;
+    animation: snow 10s linear infinite;
+    opacity: 0.3;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes snow {
+    0% { background-position: 0 0, 0 0, 0 0; }
+    100% { background-position: 50px 600px, 100px 600px, -100px 600px; }
+}
