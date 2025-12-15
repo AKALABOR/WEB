@@ -148,7 +148,6 @@ body {
   height: 150px;
 }
 
-/* Просте реагування на зміну розміру */
 @media (max-width: 900px) {
   .main-grid {
     grid-template-columns: 1fr;
